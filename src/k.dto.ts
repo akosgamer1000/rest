@@ -1,7 +1,9 @@
 import { IsDefined, IsNegative, IsNumber, IsPositive, IsString } from "class-validator"
 
 export class Replace{
-  @IsDefined()
+  @IsDefined({
+    message:'a név megadása kötelező'
+  })
   @IsString()
 	name:string
 
