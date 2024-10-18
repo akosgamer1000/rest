@@ -60,8 +60,8 @@ export class AppController {
     if(!this.#productlist[id]){
       throw new NotFoundException("cannot delte")
     }
-    this.#productlist[id].name =data.name
-    this.#productlist[id].price=data.price
+    this.#productlist[id]=data
+  
     
   }
 }
